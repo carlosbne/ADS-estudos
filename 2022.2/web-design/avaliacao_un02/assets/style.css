@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: aliceblue;
+    margin: auto;
+    height: 100%;
+    max-width: 1000px;
+    font-family: 'Public Sans', sans-serif;
+}
+/* cabeçalho */
+#header{
+    height: 100px;
+    background-color: rgba(89, 89, 134, 0.726);
+}
+h1{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 2em;
+}
+
+/* Corpo */
+#main{
+    background-color: rgb(227, 227, 238);
+    flex-direction: column;
+    margin:auto;
+    min-height: calc(100vh - 227px);
+}
+h2{
+    font-size: 1.5em;
+    padding-top: 15px;
+    text-align: center;
+}
+p{
+    padding: 30px;
+    text-align: justify;
+}
+
+#aside{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(227, 227, 238);
+    padding-bottom: 15px;
+}
+#link{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#aside > a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+#link:hover{
+    transition: 0.2ms;
+    color: white;
+    border-color: white;
+    background-color: rgb(158, 158, 158);
+}
+
+/* rodapé */
+
+#footer{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: rgba(46, 46, 68, 0.726);
+}
+
+img{
+    margin-top: 15px;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --main-color: #0E88CC;
+    --sec-color: #109CEB;
+    --destaque-color: #012E40;
+
+}
+
+header{
+    background-color: var(--main-color);
+}
+.main-page{
+    background-color: var(--main-color);
+}
+
+footer{
+    background-color: var(--main-color);
+}
