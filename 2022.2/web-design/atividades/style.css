@@ -1,0 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+li{
+    display: inline;
+    list-style-type: none;
+}
+a{
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 5px;
+}
+
+img{
+    display: inline-block;
+    width: 200px;
+}
