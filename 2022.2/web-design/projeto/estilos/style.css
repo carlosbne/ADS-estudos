@@ -13,45 +13,95 @@
     --sec-color: #109CEB;
     --destaque-color: #012E40;
 
+    --main-font: font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--main-color);
+    height: 100vh;
+}
+/* ------Cabeçalho------- */
 header{
-    height: 128px;
+    height: 90px;
     background-color: var(--main-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 50px;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin: auto;
+    max-width: 1600px;
+    min-width: 300px
 }
 .top-logo{
     height: 110px;
     width: 251px;
     display: inline;
 }
+/* ------Menu------- */
 .menu{
     width: 485px;
     height: 37px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .menu > a{
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 21px;
+    color: white;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
-.main-page{
-    background-color: var(--main-color);
+.menu > a:hover{
+    transition: 0.5s;
+    font-size: 19px;
 }
-.background-totoro{
-    display: flex;
-    margin-left: 10vw;
+/* ------Página inicial------- */
+.totoro-background{
+    height: 90vh;
+    background-image: url("/imagens/tororo.svg");
+    background-size:calc(100vh - 10%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
-.background-letter{
+.ghibli-background{
+    height: 75vh;
+    margin: auto;
+    max-width: 1400px;
+    background-image: url("/imagens/ghibli\ lettler.svg");
+    background-repeat: no-repeat;
+    background-size:calc(100vh - 5%);
+    background-position: bottom right;
+    background-attachment: scroll;
+}
+.arrow-down{
+    margin-top: 30px;
+    height: 50px;
+    background-image: url("/imagens/Arrow.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+}
+#down{
+    display: block;
+    height: 50px;
+    width: 90px;
+    margin: auto;
+}
+/* ------Filmografia------- */
+.box-filmes{
+    max-width: 1600px;
+    min-width: 300px;
+    margin: auto;
+}
+.filmografia-page{
+    background-color: #FFFFFF;
     display: flex;
-    position: relative;
 }
 
 footer{
