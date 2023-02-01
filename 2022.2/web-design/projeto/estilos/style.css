@@ -41,6 +41,9 @@ header{
     width: 251px;
     display: inline;
 }
+.buscar{
+    width: 251px;
+}
 /* ------Menu------- */
 .menu{
     width: 485px;
@@ -92,6 +95,21 @@ header{
     height: 50px;
     width: 90px;
     margin: auto;
+}
+.espaco-logo-rodape{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.logo-rodape{
+    display: flex;
+    margin-top: -30px;
+    margin-right: 50px;
+    height: 95px;
+    width: 75px;
+    background-image: url("/imagens/logo-rodape.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* ------Filmografia------- */
 .box-filmes{
