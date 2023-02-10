@@ -5,6 +5,7 @@
     padding: 0;
 	border: 0;
 	font-size: 100%;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -31,10 +32,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 10px;
+    align-content: center;
     margin: auto;
-    max-width: 1600px;
-    min-width: 300px
+    width: 100%;
+
+    /* cabeçalho fixo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
 }
 .top-logo{
     height: 110px;
@@ -65,7 +71,7 @@ header{
 }
 /* ------Página inicial------- */
 .totoro-background{
-    height: 90vh;
+    height: 100vh;
     background-image: url("/imagens/tororo.svg");
     background-size:calc(100vh - 10%);
     background-repeat: no-repeat;
@@ -73,7 +79,7 @@ header{
     background-attachment: fixed;
 }
 .ghibli-background{
-    height: 75vh;
+    height: 80vh;
     margin: auto;
     max-width: 1400px;
     background-image: url("/imagens/ghibli\ lettler.svg");
@@ -82,20 +88,22 @@ header{
     background-position: bottom right;
     background-attachment: scroll;
 }
-.arrow-down{
+.contem{
+    width: 98.5vw;
     margin-top: 30px;
-    height: 50px;
-    background-image: url("/imagens/Arrow.svg");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-
 }
 #down{
-    display: block;
     height: 50px;
     width: 90px;
     margin: auto;
 }
+.arrow-down{
+    height: 50px;
+    background-image: url("/imagens/Arrow.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
 .espaco-logo-rodape{
     display: flex;
     justify-content: flex-end;
@@ -111,17 +119,186 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 /* ------Filmografia------- */
 .box-filmes{
-    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
     min-width: 300px;
-    margin: auto;
+    margin-left: 80px;
 }
 .filmografia-page{
-    background-color: #FFFFFF;
     display: flex;
+    position: relative;
+    background-color: #FFFFFF;
+    padding-bottom: 40px;
 }
 
+.box-titulo{
+    width: 40vw;
+    padding: 2px;
+    margin: 20px;
+    border-bottom: 5px solid #012E40;;
+}
+.titulo-pagina{
+    height: 120px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.card-filmes{
+    display: flex;
+    width: 60vw;
+    height: 403px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.link-card{
+    text-decoration: none;
+    color: black;
+}
+.card-filmes:hover{
+    transition: 0.3s;
+    box-shadow: 3px 6px 6px 3px #00000060;
+}
+
+.imagem-filmes{
+    display: flex;
+    height: 404px;
+}
+.dados-filmes{
+    font-family: var(--main-font);
+    text-align: justify;
+    margin-right: 20px;
+}
+h3{
+    font-size: 28px;
+    margin: 20px;
+}
+table{
+    margin: 10px;
+    margin-bottom: 30px;
+}
+td{
+    padding-left: 10px;
+}
+p{
+    margin: 10px;
+    margin-left: 20px;
+}
+
+/* -------- Time line lateral -------- */
+.time-line{
+    display: flex;
+    width: 30vw;
+    justify-content: right;
+    padding-right: 77px;
+    position: relative;
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 1;
+}
+#line{
+    height: 100%;
+    border: 5px solid #109CEB;
+}
+.bola{
+    height: 30px;
+    width: 30px;
+    background-color: #109CEB;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+#bola1{
+    margin-right: -10px;
+    margin-top: 400px;
+}
+#bola2{
+    margin-right: -10px;
+    margin-top: 830px;
+}
+#bola3{
+    margin-right: -10px;
+    margin-top: 1260px;
+}
+#bola4{
+    margin-right: -10px;
+    margin-top: 1690px;
+}
+#bola5{
+    margin-right: -10px;
+    margin-top: 2120px;
+}
+#bola6{
+    margin-right: -10px;
+    margin-top: 2600px;
+}
+#bola7{
+    margin-right: -10px;
+    margin-top: 3010px;
+}
+#bola8{
+    margin-right: -10px;
+    margin-top: 3450px;
+}
+
+
+
+
+
+
+
+
+/* ------------Rodapé------------ */
+
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--main-color);
+    height: 120px;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    color: var(--destaque-color);
+}
+.info > p{
+    font-size: 1.5em;
+    font-weight: normal;
+    text-decoration: underline  #012E40;
+} 
+.lista-footer{
+    list-style: none;
+}
+li > a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+}
+li > a:hover{
+    transition: 1;
+    text-decoration: underline;
+}
+footer > img{
+    height: 100px;
+    width: 150px;
+    padding-right: 50px;
 }

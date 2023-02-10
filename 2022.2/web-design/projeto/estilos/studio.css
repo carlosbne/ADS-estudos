@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-size: 100%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --main-color: #0E88CC;
+    --sec-color: #109CEB;
+    --destaque-color: #012E40;
+
+    --main-font: font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    font-family: var(--main-font);
+}
+/* ------Cabeçalho------- */
+header{
+    height: 90px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+
+    /* cabeçalho fixo */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top-logo{
+    height: 110px;
+    width: 251px;
+    display: inline;
+}
+.buscar{
+    width: 251px;
+}
+
+/* ------Menu------- */
+.menu{
+    width: 485px;
+    height: 37px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu > a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.menu > a:hover{
+    transition: 0.5s;
+    font-size: 19px;
+}
+
+/* ------Página inicial------- */
+
+.studio-background{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("/imagens/studio/background-studio.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+}
+.titulo{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+}
+h1{
+    margin: auto;
+    color: white;
+    font-size: 64px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.contem{
+    width: 98.5vw;
+    margin: auto;
+}
+.arrow-down{
+    height: 50px;
+    background-image: url("/imagens/Arrow.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+#down{
+    height: 50px;
+    width: 90px;
+}
+
+/* ------------Dados------------ */
+.main-studio{
+    display: flex;
+    height: 100%;
+}
+
+.info-studio{
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+    width: 50vw;
+    max-width: 1000px;
+    margin: 20px 0px 0px 100px;
+}
+h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.info-studio > p{
+    font-size: 1.2em;
+    padding-bottom: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+table{
+    width: 400px;
+    margin-bottom: 20px;
+}
+td{
+    font-family: var(--main-font);
+    font-size: 1.05em;
+}
+
+.acessos{
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    flex-direction: row;
+}
+
+.box-lateral{
+    display: flex;
+    height: 20vw;
+    width: 40vw;
+    position: relative;
+    margin: 80px 80px;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.background-decora{
+    margin-top: 160px;
+    float: flex;
+    position: absolute;
+    z-index: -1;
+    border-left: 98.9vw solid transparent;
+    border-bottom: 790px solid hsla(201, 87%, 43%, 0.151);
+}
+
+
+
+
+/* ------------Rodapé------------ */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 120px;
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    color: var(--destaque-color);
+    margin-left: 30px;
+}
+.info > p{
+    font-size: 1.5em;
+    font-weight: normal;
+    text-decoration: underline  #012E40;
+} 
+.lista-footer{
+    list-style: none;
+}
+li > a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+}
+li > a:hover{
+    transition: 1;
+    text-decoration: underline;
+}
+footer > img{
+    height: 100px;
+    width: 150px;
+    padding-right: 50px;
+}
