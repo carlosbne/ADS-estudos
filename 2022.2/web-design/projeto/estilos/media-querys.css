@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;800;900&display=swap');
+
 
 @media screen and (max-width: 600px){
 
@@ -13,7 +15,6 @@
         display: none;
         visibility: hidden;
     }
-    
     .menu{
         width: 100vw;
         justify-content: space-around;
@@ -22,6 +23,43 @@
     .ghibli-background{
         width: 90vw;
  
+    }
+    
+
+    .titulo1{
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+    }
+    .titulo1 > h1{
+        text-align: center;
+        color: white;
+        font-size: 64px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+
+    /* -------nausicaa------- */
+
+    .main-filme{
+        margin-bottom: 20px;
+    }
+
+    /* -------------studio----------- */
+
+    .info-studio{
+        display: inline;
+        margin-top: 250px;
+        position: relative;
+    }
+    .box-lateral{
+        height: 150px;
+        width: 200px;
+        float: right;
+        position: absolute;
     }
 
     /* ------Filmografia------- */
@@ -35,9 +73,9 @@
         margin: auto;
     }
     .card-filmes{
-        width: 250px;
-        height: 600px;
-        margin-bottom: 100px;
+        display: block;
+        height: 460px;
+        padding-bottom: 10px;
     }
     .imagem-filmes{
         width: 300px;
@@ -45,33 +83,28 @@
     .imagem-filmes > img{
         margin: auto;
         width: 300px;
+        border-radius: 20px;
     }
 
 
     .box-titulo{
         width: 65vw;
     }
-    
 
 
 
     .dados-filmes{
         display: none;
+        visibility: hidden;
     }
-    .dados-filmes > a{
-        display: none;
 
-    }
 
     .time-line{
         display: none;
-        visibility: hidden;
     }
 
     footer{
         position: static;
-        bottom: 0;
-        left: 0;
     }
 
 
@@ -83,10 +116,10 @@
         visibility: hidden;
     }
     .dados-filmes{
-        display: none;
+        display: block;
+        position: relative;
     }
     .dados-filmes > a{
-        display: none;
-
+        position: absolute;
     }
 }

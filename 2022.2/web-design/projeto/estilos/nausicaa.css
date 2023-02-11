@@ -77,7 +77,6 @@ header{
     background: url("/imagens/nausicaa/poster-nausicaa\ \(2\).svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right top;
     background-attachment: fixed;
 }
 .titulo{
@@ -85,7 +84,7 @@ header{
     height: 70vh;
     justify-content: center;
     flex-direction: column;
-    width: 1000px;
+    width: 70vw;
     margin: auto;
 }
 h1{ 
