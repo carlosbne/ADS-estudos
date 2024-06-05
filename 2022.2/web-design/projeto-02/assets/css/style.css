@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --main-font: font-family: 'Poppins', sans-serif;
+    --main-color: rgba(5, 151, 242, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* AQUI COMEÇA O HEADER // CONFIGURAÇÃO GERAL */
+.container{
+    display: flex;
+    width: 100vw;
+}
+header > a{
+    display: inline-block;
+    width: 250px;
+}
+img.logo{
+    display: flex;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+/* MENU E NAVEGAÇÃO  */
+
+nav{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-icons{
+    width: 18px;
+    height: auto;
+}

@@ -1,0 +1,67 @@
+/* CONFIGURAÇÃO DA PAGE */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;800;900&display=swap');
+:root{
+    --main-font: font-family: 'Poppins', sans-serif;
+    --main-color: rgba(5, 151, 242, 0.5);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding-right: 60px;
+}
+ul li{
+    list-style: none;
+    margin: 8px;
+    padding: 5px;
+}
+li a{
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+}
+.button{
+    background-color: rgba(5, 151, 242, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+.button > a:hover {
+    border-bottom: 1px solid whitesmoke;
+}
+li a:hover{
+    transition: 0.2s;
+    border-bottom: 1px solid rgba(5, 151, 242, 0.20);
+}
+
+/* AQUI COMEÇA A MAIN */
+
+main > h1{
+    font-size: 4em;
+    margin-left: 60px;
+    margin-top: 100px;
+    width: 50%;
+}
+main > p{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+p > a{
+    color: rgba(5, 151, 242, 0.70);
+    text-decoration: none;
+}
+h2{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+section{
+    margin-top: 10px;
+    height: 400px;
+    background-color: lightgray;
+}

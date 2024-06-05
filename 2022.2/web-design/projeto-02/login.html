@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/login-style.css">
+    <title>Achaki - Entrar</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html"><img class="logo" src="assets/img/AchaKi.svg" alt="AchaKi-logo"></a>
+            <nav>
+                <a href="#"><img class="nav-icons" src="assets/img/BackButton.svg" alt="">Voltar</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="login">
+            <p>Seja bem-vindo(a) novamente. Entre para localizar seus itens.</p>
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="campo">
+                    <label for="iusuario">Email</label>
+                    <input type="email"  name="usuario" id="iusuario" placeholder="Email ou nome de usuário" autocomplete="email">
+                </div>
+                <div class="campo">
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password">
+                </div>
+                <input class="entrar" type="submit" value="Entrar">
+                <div class="cadastro">
+                    <a href="#">Esqueceu a senha?</a>
+                    <p>Novo por aqui? <a href="#">Registre-se</a></p>
+                </div>
+            </form>
+        </section>
+        <section class="imagem">
+
+        </section>
+    </main>
+</body>
+</html>
