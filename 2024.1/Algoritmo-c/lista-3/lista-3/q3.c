@@ -1,22 +1,34 @@
-//Escreva um algoritmo que determine se um valor V encontra-se em um arranjo de n elementos. Escreva a equação de tempo de execução do seu algoritmo.
+/*3) Escreva um algoritmo que receba um vetor ordenado e um numero extra e insira esse número na
+sua posição correta no vetor ordenado, deslocando os outros números se for necessario. Quais a
+sua função de custo e ordens de complexidade O.*/
 
-#include<stdio.h>
+#include <stdio.h>
 
-int checarValor(int vetor[], int tamanho, int elemento){
-    for (int i = 0; i < tamanho; i++){
-        if(vetor[i] == elemento){
-            return 1;
+void posicaoCorreta(int vetor[], int tamanho, int elemento) {
+    for (int i = 0; i < tamanho; i++) {                   // 2 - executa i n vezes
+        if (vetor[i] > elemento) {                        // 2(n) acesso e compara
+            for (int j = tamanho; j > i; j--) {           // 2 inicia j executa j n vezes
+                vetor[j] = vetor[j - 1];                  // 
+            }
+            vetor[i] = elemento;
+            break;
         }
     }
+    printf("novoVetor: ");
+    for (int i = 0; i < tamanho; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int vetor[6] = {1, 2, 3, 5, 6};
+    int numero = 4;
+    int tamanho = sizeof(vetor) / sizeof(vetor[0]);
+
+    posicaoCorreta(vetor, tamanho, numero);
+
     return 0;
 }
 
-int main(){
-    int vetor[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int tamanho = sizeof(vetor)/sizeof(vetor[0]);
-    int elemento = 14;
-
-    printf(checarValor(vetor, tamanho, elemento) == 1 ? "Tem o elemento\n" : "Não tem o elemento\n");
-
-    return 0;
-}
+//f(n) = O(n^2) / n^3
