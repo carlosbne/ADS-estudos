@@ -13,7 +13,7 @@ int main() {
   int opcaoEscolhida = -1;
 
   while (opcaoEscolhida != 0) {
-    printf("Selecione uma opção:\n"
+    printf("\nSelecione uma opção:\n"
            "0 - SAIR\n"
            "1 - INCLUIR CONTATO\n"
            "2 - LISTAR CONTATOS\n");
@@ -21,14 +21,20 @@ int main() {
 
     switch (opcaoEscolhida) {
     case 1:
-      printf("Informe o nome, email e número telefone:\n");
-      scanf("%s, %s, %d", &contato[qtdContatos].nome,
-            &contato[qtdContatos].email, &contato[qtdContatos].numero);
+      printf("\nInforme o nome, email e número telefone:\n");
+      scanf("%s %s %d", &contato[qtdContatos].nome, &contato[qtdContatos].email,
+            &contato[qtdContatos].numero);
+      qtdContatos++;
       break;
     case 2:
       for (int i = 0; i < qtdContatos; i++) {
-        fprintf("" + i + "nome: " + contato[i].nome + "\n email: " +
-                contato[i].email + "\n telefone: " + contato[i].numero + "\n");
+        printf("Nome: %s\nEmail: %s\nTelefone: %d\n\n", contato[i].nome,
+               contato[i].email, contato[i].numero);
+      }
+      break;
+    default:
+      if (opcaoEscolhida == 0) {
+        break;
       }
       break;
     }
