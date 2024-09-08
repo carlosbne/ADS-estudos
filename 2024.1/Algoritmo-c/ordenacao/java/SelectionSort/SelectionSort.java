@@ -1,6 +1,10 @@
-public class SelectionSort {
+import java.util.Random;
+
+public class Selection {
     //funcao selectionsort 
-    public void sort(int arr[]){
+    public void selectionSort(int arr[]){
+        long tempoInicial = System.currentTimeMillis(); 
+
         for(int i = 0; i < arr.length - 1; i++){ 
             int menor = i;                              //define o menor como primeiro elemento
             for(int j = i + 1; j < arr.length; j++){
@@ -14,6 +18,29 @@ public class SelectionSort {
                 arr[menor] = temp; 
             }
         }
+
+        //calcula o tempo 
+        long tempoFinal = System.currentTimeMillis();
+        System.out.println(tempoFinal +"\n");
+        long tempoTotal =  tempoFinal - tempoInicial;
+        System.out.println("O método foi executado em " + (tempoTotal/* /1000 */) + " m segundos\n");
+
+        System.out.println("Array Ordenada: ");
+        imprimir(arr);                         //chamada para imprimir ordenado
+    }
+
+    //função para gerar conjunto de dados aleatórios
+    void gerador(int tamanho, int limite){
+        int[] arr = new int[tamanho];            //cria array definindo tamanho
+  
+        for(int i = 0; i < tamanho; i++){        //laço para preencher array com números gerados
+            Random rand = new Random();
+            int number = rand.nextInt(limite);
+            arr[i] = number;
+        } 
+        System.out.println("Array gerada: ");
+        imprimir(arr);                          //chamada imprimir dados aleatórios
+        selectionSort(arr);                        //chamada para ordenar
     }
 
     //funcao para imprimir o array
@@ -23,3 +50,10 @@ public class SelectionSort {
         }
     }
 }
+    public class SelectionSort{
+        public static void main(String args[]) {
+          Bubble obj = new Bubble();
+          obj.gerador(10, 100);        //chama função geradora passando o temanho e limite do arr
+        }
+
+    }
