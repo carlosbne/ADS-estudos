@@ -21,7 +21,7 @@ import java.util.Random;
         System.out.println("O método foi executado em " + (tempoTotal/* /1000 */) + " ms\n");
 
         System.out.println("Array Ordenada: ");
-        imprimir(arr);                         //chamada para imprimir ordenado
+        /* imprimir(arr);  */                        //chamada para imprimir ordenado
 
     }
 
@@ -35,7 +35,7 @@ import java.util.Random;
             arr[i] = number;
         } 
         System.out.println("Array gerada: ");
-        imprimir(arr);                          //chamada imprimir dados aleatórios
+        /* imprimir(arr); */                          //chamada imprimir dados aleatórios
         insertionSort(arr);                        //chamada para ordenar
     }
 
@@ -44,12 +44,12 @@ import java.util.Random;
         for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + " ");
         }
-    }
+    }   
 }
     public class InsertionSort{
         public static void main(String args[]) {
           Insert obj = new Insert();
-          obj.gerador(10, 100);        //chama função geradora passando o temanho e limite do arr
+          obj.gerador(100000, 100);        //chama função geradora passando o temanho e limite do arr
         }
     }
 

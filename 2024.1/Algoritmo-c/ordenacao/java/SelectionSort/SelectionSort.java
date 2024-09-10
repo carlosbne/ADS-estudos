@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Selection {
+class Selection {
     //funcao selectionsort 
     public void selectionSort(int arr[]){
         long tempoInicial = System.currentTimeMillis(); 
