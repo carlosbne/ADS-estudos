@@ -21,12 +21,12 @@ class Selection {
 
         //calcula o tempo 
         long tempoFinal = System.currentTimeMillis();
-        System.out.println(tempoFinal +"\n");
+        System.out.println();
         long tempoTotal =  tempoFinal - tempoInicial;
-        System.out.println("O método foi executado em " + (tempoTotal/* /1000 */) + " m segundos\n");
+        System.out.println("O método foi executado em " + (tempoTotal/* /1000 */) + " ms\n"); 
 
         System.out.println("Array Ordenada: ");
-        imprimir(arr);                         //chamada para imprimir ordenado
+        /* imprimir(arr); */                         //chamada para imprimir ordenado
     }
 
     //função para gerar conjunto de dados aleatórios
@@ -39,7 +39,7 @@ class Selection {
             arr[i] = number;
         } 
         System.out.println("Array gerada: ");
-        imprimir(arr);                          //chamada imprimir dados aleatórios
+        /* imprimir(arr); */                          //chamada imprimir dados aleatórios
         selectionSort(arr);                        //chamada para ordenar
     }
 
@@ -52,8 +52,8 @@ class Selection {
 }
     public class SelectionSort{
         public static void main(String args[]) {
-          Bubble obj = new Bubble();
-          obj.gerador(10, 100);        //chama função geradora passando o temanho e limite do arr
+          Selection obj = new Selection();
+          obj.gerador(100000, 100);        //chama função geradora passando o temanho e limite do arr
         }
 
     }
