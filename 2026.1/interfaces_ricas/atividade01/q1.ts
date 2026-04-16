@@ -14,7 +14,7 @@ console.log(arr)
 
 //b.
 let arr1 =  [3,5,7,3,8,9,1];
-let arrQuadrado:Number[] = [];  //definindo tipo do array
+let arrQuadrado:number[] = [];  //definindo tipo do array
 
 arr1.forEach((el) => arrQuadrado.push(el*el));
 

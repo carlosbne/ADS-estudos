@@ -3,4 +3,11 @@ da classe Array para ordenar de forma decrescente, passando uma função arrow c
 3.1 Escreva um teste com o array [‘carro’, ’boneco’, ’ave’, ‘lapis’] */
 
 
-let arrayTeste = ['carro', 'boneco', 'ave', 'lapis']
+let arr4 = ['carro', 'boneco', 'ave', 'lapis']
+
+
+let sortArray = (arr: string[]) => {
+    return arr.sort((a, b) => a > b ? -1 : 1);
+}
+
+console.log(sortArray(arr4))
