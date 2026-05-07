@@ -1,3 +1,8 @@
 {
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "java.project.sourcePaths": [
+        "2026.1/estrutura_dados_lineares/fila/atividade01",
+        "2026.1/estrutura_dados_lineares/exercicio-vetor",
+        "2026.1/estrutura_dados_lineares/exercicio-lista"
+    ]
 }
